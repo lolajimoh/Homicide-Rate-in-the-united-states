@@ -113,7 +113,7 @@ FROM Portfolio_Projects.dbo.HomicideVictim VIC
 WHERE Relationship <> 'Unknown'
 --ORDER BY 1
 )
-SELECT *,CAST((TotalCases/TotalKnown) AS FLOAT) AS Percentageknown
+SELECT *,CAST((TotalKnown/Totalcaes) AS FLOAT) AS Percentageknown
 FROM CTE_HOMICIDE
 ORDER BY 1
 
